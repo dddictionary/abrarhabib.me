@@ -2,17 +2,22 @@
   "name": "abrarhabib.me",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://dddictionary.github.io/abrarhabib.me",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "build-css": "npx tailwindcss -i ./src/input.css -o ./build/static/output.css --watch"
   },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.21.1"
+    "react-router-dom": "^6.21.1",
+    "tailwindcss": "^3.4.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.43",
@@ -22,6 +27,7 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
+    "gh-pages": "^6.1.1",
     "vite": "^5.0.8"
   }
 }

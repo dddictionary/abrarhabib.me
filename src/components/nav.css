@@ -1,0 +1,38 @@
+/* Navbar.css */
+
+.nav {
+  background-color: #f5f5dc; /* Khaki background color */
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  margin: 0;
+  color: #8b4513; /* Dark khaki text color */
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+li {
+  transition: color 0.3s ease-in-out; /* Smooth color transition on hover */
+}
+
+li:hover {
+  color: #a0522d; /* Hovered khaki text color */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Optional: Add a box shadow for a subtle lift effect on hover */
+li:hover {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
